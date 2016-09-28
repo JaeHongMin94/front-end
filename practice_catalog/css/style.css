@@ -54,12 +54,15 @@ body{
   padding: 0;
   margin: -1px;
 }
+.wrapper {
+}
 
 .wrapper > div{
-  background-color: #fff;
+  margin: 0 auto;
   width: 720px;
   height: 120px;
   box-sizing: border-box;
+  background-color: #fff;
   border-bottom: 1px solid #ececec;
 }
 
@@ -169,7 +172,7 @@ label{
 }
 
 label>span:before{
-content: 'add to cart';
+content: 'add to wishlist';
 }
 
 /*체크박스가 선택되었을 떄의 레이블 모습*/
