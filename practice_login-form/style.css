@@ -60,16 +60,24 @@ button{
   color: #ffffff;
 }
 
-.sns li{
+button:hover{
+  background: #289fda;
+
+}
+
+.sns li a{
   float: left;
   margin-right: 10px;
   width: 115px;
   height: 30px;
   border: 2px solid #215b9a;
   border-radius: 15px;
-}
-.sns li a{
   line-height: 34px;
+  position: relative;
+}
+
+.sns li a:hover{
+  top: 2px;
 }
 
 .help{
@@ -96,8 +104,13 @@ button{
   height: 30px;
 }
 
-.help li a{
+.help a{
   color: #3b5dac;
+  text-decoration: none;
+}
+
+.help a:hover{
+  color: #289fda;
   text-decoration: none;
 }
 
