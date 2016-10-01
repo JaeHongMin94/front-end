@@ -1,0 +1,129 @@
+html{
+  font-size: 100%; /* 16px */
+}
+
+/*브라우저 스타일 초기화 */
+body{
+  margin: 0;
+  font: 1rem/1.5 "Spoqa Han Sans", Sans-Serif; /*font-size/line-height*/
+}
+
+/*모듈화 */
+
+.kaushan{  font-family: "Kaushan Script";
+}
+.clearfix::after{ /*자식요소의 float으로 인해 높이값을 잃어버린 부모의 가상요소에게 clear:both 선언*/
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.children-margin-0 *{ /*기본 P 요소의 margin 값 초기화*/
+  margin: 0;
+}
+
+/**
+ * --------------------------------
+ * .magazine-view
+ * ----------------------------- */
+
+/**
+* --------------------------------
+* .magazine-photo-area
+* ----------------------------- */
+.magazine-photo-area{
+  background: #89a776;
+  position: fixed;
+  width: 50vw;
+  margin-right: 40px;
+}
+
+.magazine-headline{
+  box-sizing: border-box;
+  position: fixed; /*높이를 잃어버림*/
+  top: auto;
+  left: 0;
+  width: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 0.6em 0.6em 0.6em 1.2em;
+  transform: rotate(-90deg) translate(-100%); /*rotate -90도 회전, x축으로 -100% 이동*/
+  transform-origin: 0 0; /*콤마 필요없음 요소의 x0 y0 위치를 기준으로 transform*/
+}
+
+.magazine-headline p {
+  width: 70%;
+  margin-bottom: 0.4rem;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  letter-spacing: 0.01em;
+  color: #e4e2c8;
+}
+
+/**
+* width, height 중 하나의 값에
+* 다른 하나를 자동으로 비율 적용하는 방법
+*/
+
+.magazine-photo-area img{
+  width: auto;
+  height: 800px;
+  vertical-align: top;
+  margin-left: 100px;
+}
+
+/**
+* --------------------------------
+*.magazine-contents
+* ----------------------------- */
+.magazine-contents{
+  float: right;
+  width: 40vw;
+  position: relative;
+  z-index: 100;
+  margin-right: 45px;
+  padding: 1em 1.2em;
+  background: #fff;
+}
+
+.magazine-contents-head {
+  margin-top: 40px;
+}
+
+.magazine-contents-head img {
+  float: left;
+  position: relative;
+  left: 20px;
+}
+
+.magazine-contents-head p {
+  /*margin-top: 1.5em;*/
+  font-size: 0.875rem ;
+}
+
+.magazine-contents-head p:first-of-type{ /*.magazine-contents-head 요소중 첫번쨰 p 요소*/
+  padding-top: 80px;
+}
+
+.magazine-content{
+  column-count: 2;
+  column-gap: 20px;
+  padding: 1em 1.2em;
+  background: #fff;
+  font-size: 0.75rem;
+  margin-top: 2em;
+  border-top: 5px solid #000;
+  padding: 3em 0;
+}
+
+.magazine-content p {
+  margin-bottom: 1.2em;
+}
+
+.dropcap::first-letter{ /*IE 8 에서는 :first-letter로 선택자 작성*/
+  float: left;
+  margin-right: 15px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1em;
+}
