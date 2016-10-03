@@ -7,67 +7,89 @@
   <title>practice list</title>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 <style>
+/*--------------- 미디어쿼리 시작------------------- */
+@media (max-width: 720px) {
+
+	}
+
+
+/*--------------- 미디어쿼리 끛------------------- */
   body{
-    background: #468966;
-    color: #FFF0A5;
+    background: #fff;
     margin: 0;
     padding: 0;
-    font-family:'Inconsolata', monospace;
-    font-weight: bold;
+    font-family:sans-serif;
+    font-weight: 300;
+    margin: 20px;
+    color: #222;
   }
 
   .wrapper{
-    background-color: #468966;
-    margin: 0 auto;
-    width: 100vw;
-
+    margin: auto;
+    /*width: 100vw;*/
   }
-  .list{
-    padding: 30px;
 
-  }
-  .page-title{
+  .title-strong{
+    font-size: 2.5em;
     margin-left: 20px;
+    font-family: "Helvetica NEUE", sans-serif;
+    font-weight: 800;
+    border-bottom: 1px solid #222;
   }
   ul{
-    margin: 0;
+    margin: 10px;
     padding: 0;
   }
   li{
+    display: inline-block;
     list-style:none;
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
     text-align: center;
+    margin: 10px;
   }
-  a{
+  li>a{
     text-decoration: none;
-    color: #fff;
     display: block;
-    background: #FFB03B;
-    border-radius: 25px;
-    line-height: 50px;
+    color: #222;
+    font-weight: 600;
   }
-  a:hover{
-    /*background: #8E2800;*/
-    background: #FFF0A5;
-    color: #8E2800;
+  li>a:hover{
+    color: tomato;
+    cursor: pointer;
+  }
 
+  li>a:hover img{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
   }
+
+  .preview{
+    width: 250px;
+    height: 200px;
+    border: 1px solid salmon;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
   </style>
 
 </head>
 <body>
   <div class="wrapper">
-    <div class="list">
-      <h1 class="page-title">연습목록</h1>
+    <div class="homework">
+      <h1 class="title-strong">과제</h1>
       <ul>
-        <li><a href ="https://siwabada.github.io/FDS/practice_catalog">체크박스/셀렉트</a></li>
-        <li><a href ="https://siwabada.github.io/FDS/practice_magazine">멀티컬럼레이아웃</a></li>
-        <li><a href ="https://siwabada.github.io/FDS/practice_article">아티클</a></li>
-        <li><a href ="https://siwabada.github.io/FDS/practice_attribute-selector">셀렉터</a></li>
-        <li><a href ="https://siwabada.github.io/FDS/practice_hyundai-table">현대카드테이블</a></li>
-        <li><a href ="https://siwabada.github.io/FDS/practice_login-form">로그인폼</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_catalog"><div class="preview"><img src="./images/preview/catalog.png" alt="" height="200px"></div>체크박스/셀렉트</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_magazine"><div class="preview"><img src="./images/preview/multi-culumn.png" alt="" height="200px"></div>멀티컬럼레이아웃</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_login-form"><div class="preview"><img src="./images/preview/login-form.png" alt="" width="250px"></div>로그인폼</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_article"><div class="preview"><img src="./images/preview/article.png" alt="" width="250px"></div>아티클</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_attribute-selector"><div class="preview"><img src="./images/preview/selector.png" alt="" width="250px"></div>속성선택자</a></li>
+        <li><a href ="https://siwabada.github.io/FDS/practice_hyundai-table"><div class="preview"><img src="./images/preview/hc-table.png" alt="" height="200px"></div>테이블</a></li>
+      </ul>
+    </div>
+    <div class="study">
+      <h1 class="title-strong">Study</h1>
+      <ul>
+        <li><a href ="https://siwabada.github.io/small_project/treeview_without_javascript"><div class="preview"><img src="./images/preview/tree-view.png" alt="" width="250px"></div>멀티컬럼레이아웃</a></li>
       </ul>
     </div>
   </div>
