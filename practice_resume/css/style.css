@@ -5,12 +5,12 @@ body{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff;
+  /*color: #fff;*/
+  color: #105B63;
 }
 
 .wrapper{
-  background: red;
-  min-width: 800px;
+
 }
 nav{
     /*background: #FFFAD5;*/
@@ -22,7 +22,10 @@ header{
 }
 
 main{
-    background: #105B63;
+    /*background: #105B63;*/
+}
+#portfolio{
+  background: #FFD34E;
 }
 /**
 * --------------------------------
@@ -45,7 +48,9 @@ body, h1, ul{
   font-size: 3em;
   text-align: center;
   margin: 0;
-  padding: 100px;
+}
+#skills{
+  color: #2d3e50;
 }
 .strong{
   color : tomato;
@@ -58,16 +63,16 @@ body, h1, ul{
   text-align: center;
 }
 .star::after{
-  /*content: "?";*/
+  /*content: "";*/
   /*display: inline-block;*/
-  /*position: relative;*/
+
+
 }
 section{
-  width: 970px;
-  margin: 0 auto;
+
 }
-nav, header{
-  min-width: 600px;
+.wrapper, nav, header{
+  min-width: 700px;
 }
 /**
 * --------------------------------
@@ -76,8 +81,14 @@ nav, header{
 nav{
   width: 100%;
   height: 70px;
-  padding: 0;
+  padding: 0 30px;
   position: fixed;
+  z-index: 999;
+}
+nav::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 nav>h1{
   display: inline-block;
@@ -89,14 +100,17 @@ nav ul{
   display: inline-block;
 }
 nav li{
-  background: tomato;
-  float: right;
+  float: left;
   display: inline;
 }
 
 nav li a{
   line-height: 70px;
   padding: 10px;
+}
+
+nav li:last-child{
+  padding-right: 0;
 }
 
 /**
