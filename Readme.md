@@ -1,6 +1,5 @@
-<br>
 #연습과제
-***
+
 ###Resume Site 
 <https://siwabada.github.io/FDS/practice_resume>
 
@@ -23,10 +22,8 @@
 <https://siwabada.github.io/FDS/practice_catalog/practice_article>
 
 <br>
-***
-
 #STUDY
-***
+
 ###CSS Checkbox Menu
 <https://siwabada.github.io/small_project/treeview_without_javascript/>
 
