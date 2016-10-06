@@ -1,0 +1,247 @@
+/**
+* --------------------------------
+* 레이아웃
+* ----------------------------- */
+.guide{
+  /*background: url(../images/guide.png);*/
+  position: relative;
+}
+
+.guide::before{
+  content: "";
+  position: absolute;
+  width: 960px;
+  height: 100vh;
+  background: url(../images/guide.png);
+  z-index: 999;
+}
+
+body{
+
+}
+.wrapper{
+  width: 960px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+header{
+  height: 80px;
+}
+
+/**
+ * --------------------------------
+ * 타이포그래피
+ * ----------------------------- */
+ html{
+   font-size: 10px !important;
+   line-height: 1.2 !important;
+ }
+.wrapper{
+  font-family: 'Varela Round', sans-serif;
+  color: #222222;
+}
+.content-subject{
+  font-family: 'Oswald', sans-serif;
+  color: #1f4ba5;
+  font-size: 1.2rem;
+}
+.varela{
+  font-family: 'Varela Round', sans-serif;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+
+/**
+* --------------------------------
+* common
+* ----------------------------- */
+
+.readable-hidden{
+  width: 1px; /*공간이 있어야 스크린 리더가 읽을 수 있음*/
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+}
+.float-l{
+  float: left;
+}
+.float-r{
+  float: right;
+}
+ul li{
+  float: left;
+}
+a{
+  text-decoration: none;
+  color: #222222;
+}
+header::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper, header{
+  box-sizing: border-box;
+}
+.center-y{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/**
+* --------------------------------
+* header
+* ----------------------------- */
+
+.header{
+  padding: 30px;
+  position: relative;
+}
+.logo{
+  left: 80px;
+}
+.main-menu{
+  left: 240px;
+}
+.main-menu a{
+  margin-right: 50px;
+  font-size: 1.4rem;
+}
+.main-menu a::after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  padding-left: 15px;
+  transform: translateY(-50%);
+  background: url(../images/icon-nav-arrow-down.png) no-repeat center;
+}
+.buttons{
+  left: 800px;
+}
+.buttons li{
+  margin-left: 40px;
+}
+.buttons li:first-child{
+  margin-left: 0;
+  position: relative;
+}
+
+.buttons li:first-child span{
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background:#1f4ba5;
+  position: absolute;
+  top:-10px;
+  left:10px;
+
+}
+
+/**
+* --------------------------------
+* slider
+* ----------------------------- */
+
+.slider{
+  display: flex;
+  height: 480px;
+  left:1px; /*왜?? 이동하는지 확인 필요*/
+  position: relative;
+}
+.content{
+  position: relative;
+}
+.content-detail{
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.content-detail p{
+  margin-bottom: 20px;
+}
+.content-subject{
+
+}
+.content-title{
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+.content-description{
+  font-size: 1.6rem;
+  color: #868686;
+  line-height: 1.5;
+}
+.buy-btn{
+  display: block;
+  width: 160px;
+  height: 30px;
+  background: #1f4ba5;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 30px;
+}
+.buy-btn::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  left: 70px;
+  width: 1px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 0.1;
+}
+.arrow-left{
+  position: absolute;
+  left: 30px;
+  top: 225px;
+}
+.arrow-right{
+  position: absolute;
+  right: 29px;
+  top: 225px;
+}
+
+.sub{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sub a{
+  width: 240px;
+  position: relative;
+}
+.sub a:hover img{
+  opacity: 0.5;
+}
+.sub a:hover::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 120px;
+  background: #1f4ba5;
+  opacity: 1;
+}
+.sub img{
+  vertical-align: top; /*중요! 이미지 사이의 공백 제거*/
+}
+
+/**
+* --------------------------------
+* banners
+* ----------------------------- */
