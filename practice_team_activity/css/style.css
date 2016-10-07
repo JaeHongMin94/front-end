@@ -2,18 +2,20 @@
 * --------------------------------
 * 레이아웃
 * ----------------------------- */
-.guide{
+.guide-on{
   /*background: url(../images/guide.png);*/
   position: relative;
 }
 
-.guide::before{
+
+.guide-on::before{
   content: "";
   position: absolute;
   width: 960px;
   height: 100vh;
   background: url(../images/guide.png);
   z-index: 999;
+  opacity: 0.6;
 }
 
 body{

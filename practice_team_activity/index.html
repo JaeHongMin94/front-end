@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
+  <div id="container" class="wrapper guide-off">
     <!--헤더-->
     <header class="header">
         <a href="#"><img  class="hamburger-menu center-y" src="./images/icon-header-hamberger.png" alt="헤더햄버거메뉴"></a>
@@ -70,7 +70,28 @@
     <section class="brands"></section>
     </main>
     <footer>footer</footer>
-
   </div>
+<script type="text/javascript">
+// TODO
+// html문서에서 id container를 가진 엘리먼트를 가져와서 변수 wrapper에 저장한다
+// wrapper를 클릭하면 아래 함수를 실행한다
+
+
+var wrapper = document.getElementById("container");
+wrapper.onclick = function(){
+
+  var wrapperClasses = document.getElementById("container").classList;
+
+  if(wrapperClasses.contains("guide-off")){
+    wrapperClasses.add("guide-on");
+    wrapperClasses.remove("guide-off");
+  }else{
+    wrapperClasses.add("guide-off");
+    wrapperClasses.remove("guide-on");
+  }
+
+};
+
+</script>
 </body>
 </html>
