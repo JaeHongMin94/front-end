@@ -12,7 +12,8 @@
   content: "";
   position: absolute;
   width: 960px;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: 2000px;
   background: url(../images/guide.png);
   z-index: 999;
   opacity: 0.6;
@@ -44,10 +45,11 @@ header{
   font-family: 'Varela Round', sans-serif;
   color: #222222;
 }
-.content-subject{
+.content-subject, .banner-subject{
   font-family: 'Oswald', sans-serif;
   color: #1f4ba5;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 .varela{
   font-family: 'Varela Round', sans-serif;
@@ -81,6 +83,7 @@ a{
   text-decoration: none;
   color: #222222;
 }
+
 header::after{
   content: "";
   display: block;
@@ -89,11 +92,51 @@ header::after{
 .wrapper, header{
   box-sizing: border-box;
 }
+.center-x{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .center-y{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+.box-link:hover img{
+  opacity: 0.5;
+}
+/**
+* --------------------------------
+* grid-layout
+* ----------------------------- */
+
+/*module:row*/
+.row:after{
+  content: "";
+  display:block;
+  clear: both;
+}
+.box{
+  position: relative;
+  background: #62de67;
+  height: 240px;
+}
+/*module:column*/
+[class*="col-"]{
+  float: left;
+}
+
+.col-1 { width: 120px; }
+.col-2 { width: 240px; }
+.col-3 { width: 360px; }
+.col-4 { width: 480px; }
+.col-5 { width: 600px; }
+.col-6 { width: 720px; }
+.col-7 { width: 840px; }
+.col-8 { width: 960px; }
+
 /**
 * --------------------------------
 * header
@@ -123,6 +166,9 @@ header::after{
   padding-left: 15px;
   transform: translateY(-50%);
   background: url(../images/icon-nav-arrow-down.png) no-repeat center;
+}
+.main-menu a:hover{
+  color: #ff4800;
 }
 .buttons{
   left: 800px;
@@ -191,7 +237,7 @@ header::after{
   background: #1f4ba5;
   border-radius: 15px;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 25px 10px 20px;
   box-sizing: border-box;
   position: relative;
   margin-top: 30px;
@@ -247,3 +293,40 @@ header::after{
 * --------------------------------
 * banners
 * ----------------------------- */
+
+.banner-detail{
+  width: 100%;
+  text-align: center;
+
+}
+.banner-title{
+  font-size: 24px;
+}
+.banner1 .banner-description{
+  font-size: 14px;
+  color: #868686;
+  top: -0.5em;
+  position: relative;
+}
+.banner-description{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.banner1 p{
+  margin-bottom: 20px;
+}
+.banner1 .banner-detail{
+  top: 120px;
+}
+.banner2 .banner-detail{
+  top: 40px;
+}
+.banner2 .banner-subject{
+  margin-bottom: 120px;
+}
+.banner3 .banner-detail{
+  top: 140px;
+}
+.banner3 .banner-subject{
+  margin-bottom: 20px;
+}
