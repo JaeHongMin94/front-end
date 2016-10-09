@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Spoqa Han Sans', sans-serif;
+  line-height: 1.5;
+  color: #404040;
+}
+.wrapper{
+  width: 960px;
+  margin: 50px auto;
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 2px solid #404040;
+  padding-bottom: 20px;
+}
+.button-group {
+  margin-top: 30px;
+  text-align: center;
+}
+.button-group button{
+  color: #fff;
+  border: none;
+  padding: 15px 15px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  transition: all 0.2s;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.44);
+}
+.button-group button:hover{
+  cursor: pointer;
+}
+.button-group button:active{
+  transform: translateY(3px);
+}
+.button-group button.button-increase-font-size{
+  background: #F36C8C;
+  border-bottom: 5px solid #f92d5d;
+}
+.button-group button.button-increase-font-size:active{
+  border-bottom: 2px solid #f92d5d;
+}
+.button-group button.button-decrease-font-size{
+  background: #4ec5ff;
+  border-bottom: 5px solid #009ae6;
+}
+.button-group button.button-decrease-font-size:active{
+  border-bottom: 2px solid #009ae6;
+}
+.demo-text-area{
+  margin-top: 30px;
+  height: 50vh;
+  overflow: scroll;
+  border: 1px solid #404040;
+  padding: 20px;
+}
