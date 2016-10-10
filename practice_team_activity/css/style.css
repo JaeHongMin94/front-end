@@ -173,6 +173,9 @@ header::after{
 
 .row-1 { height: 120px;}
 
+.sub-col-1{width: 60px;height: 60px;}
+.sub-col-2{width: 120px;height: 60px;}
+
 /**
 * --------------------------------
 * header
@@ -452,4 +455,159 @@ header::after{
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
+}
+/**
+* --------------------------------
+* review
+* ----------------------------- */
+.review-container{
+  height: 480px;
+  background: url(../images/icon-testimonials-chat-double.png) no-repeat 30px 40px;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.review-subject, .about-subject{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.666666667;
+  color: #1f4ba5;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.review-contents{
+font-family:'PT Serif',sans-serif;
+font-size: 1.8rem;
+line-height: 1.666666667;
+font-style: italic;
+color: #868686;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.reviewer{
+  position: relative;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.reviewer-name span{
+  font-family:'PT Serif',sans-serif;
+  font-size: 1.2rem;
+  color: #b8b8b8;
+  font-style: italic;
+  line-height: 1.5;
+}
+.reviewer-name{
+  position: absolute;
+  top: 22px;
+  right: 140px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.reviewer-pic{
+  position: absolute;
+  top: 0;
+  left: 135px;
+}
+.actiove-page{
+  position: relative;
+  top: 3.5px;
+  right: 1px;
+}
+.refresh{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+/**
+* --------------------------------
+*about
+* ----------------------------- */
+.about-container{
+  background: url(../images/icon-about-briefcase.png) no-repeat 30px 40px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  height: 480px;
+}
+.about-subject{
+  margin-bottom: 25px;
+}
+.about-since{
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.about-since, .about-content{
+  font-size: 14px;
+  line-height: 1.714285714;
+  color: #868686;
+}
+.about-title{
+  font-family:'PT Serif',sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color:#868686;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.about .quote{
+  margin-bottom: 10px;
+}
+.about-pic{
+  width: 480px;
+  margin-bottom: 20px;
+}
+
+.about-pic div:nth-child(1){
+  background: url(../images/info-01.jpg);
+}
+.about-pic div:nth-child(3){
+  background: #f3f3f3;
+}
+.about-pic div:nth-child(8){
+  /*background: url(../images/info-04.jpg);*/
+}
+.about-pic div:nth-child(12){
+  background: url(../images/info-04.jpg);
+}
+.about-pic div:nth-child(13){
+  background: url(../images/inf-05.jpg);
+}
+
+.about-data{
+  background: #1f4ba5;
+  padding-top: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+.brands{
+  background-image: url(../images/icon-about-storage.png);
+  background-repeat: no-repeat;
+  background-position: 25px, 25px;
+}
+.countries{
+  background-image: url(../images/icon-about-map.png);
+  background-repeat: no-repeat;
+  background-position: 25px, 25px;
+}
+.data-number{
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.data-number span{
+  font-family:'PT Serif',sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
 }
