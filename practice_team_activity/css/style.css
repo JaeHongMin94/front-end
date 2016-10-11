@@ -13,7 +13,7 @@
   position: absolute;
   width: 960px;
   /*height: 100vh;*/
-  height: 2000px;
+  height: 3000px;
   background: url(../images/guide.png);
   z-index: 999;
   opacity: 0.6;
@@ -619,9 +619,92 @@ margin-top: 20px;
 * ----------------------------- */
 .brands .col-1{
   height: 120px;
+  box-sizing: border-box;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
-.brands .col-1:nth-of-type(1){
-background: url(../images/logo-sprite.png) no-repeat  -302px -5px;
-background-image: 60px 39px;
-/*background-position: */
+
+.brand-0{
+  background: url(../images/icon-number.png) no-repeat center;
+  position: relative;
+}
+
+.brand-0 .sub-title{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Oswald;
+  font-size: 1.4rem;
+  color: #1f4ba5;
+  line-height: 1.714285714;
+  text-align: center;
+}
+
+.brand-1{
+  background: url(../images/logo-hnm.png) no-repeat center;
+}
+.brand-2{
+  background: url(../images/logo-puma.png) no-repeat center;
+}
+.brand-3{
+  background: url(../images/logo-adidas.png) no-repeat center;
+}
+.brand-4{
+  background: url(../images/logo-converse.png) no-repeat center;
+}
+.brand-5{
+  background: url(../images/logo-boss.png) no-repeat center;
+}
+.brand-6{
+  background: url(../images/logo-nike.png) no-repeat center;
+}
+.brand-7{
+  background: url(../images/logo-crown.png) no-repeat center;
+}
+
+/**
+* --------------------------------
+*fotter
+* ----------------------------- */
+
+/**
+* --------------------------------
+* category
+* ----------------------------- */
+
+.category{
+  height: 60px;
+  width: 960px;
+  box-sizing: border-box;
+  background: #222222;
+  padding-left: 90px;
+  padding-right: 90px;
+  line-height: 60px;
+  border-bottom: 1px solid #ececec;
+}
+.category li{
+  /*margin-right: 35px;*/
+  list-style:disc;
+  list-style-position: inside;
+  color : #656565;
+}
+.category li:first-child{
+  list-style: none;
+}
+
+.category a{
+  position: relative;
+  /*left: -1em;*/
+  margin-right: 31px;
+  margin-left: 25px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.category li:first-child a{
+  margin-left: 0;
+}
+.category li:last-child a{
+  margin-right: 0;
 }
