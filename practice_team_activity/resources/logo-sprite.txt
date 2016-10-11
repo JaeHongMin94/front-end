@@ -1,0 +1,47 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-logo-adidas {
+    width: 51px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo-boss {
+    width: 70px;
+    height: 25px;
+    background-position: -66px -5px;
+}
+
+.sprite-logo-converse {
+    width: 70px;
+    height: 44px;
+    background-position: -146px -5px;
+}
+
+.sprite-logo-crown {
+    width: 66px;
+    height: 56px;
+    background-position: -226px -5px;
+}
+
+.sprite-logo-hnm {
+    width: 60px;
+    height: 39px;
+    background-position: -302px -5px;
+}
+
+.sprite-logo-nike {
+    width: 60px;
+    height: 21px;
+    background-position: -372px -5px;
+}
+
+.sprite-logo-puma {
+    width: 70px;
+    height: 35px;
+    background-position: -442px -5px;
+}

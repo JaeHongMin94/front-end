@@ -1,6 +1,6 @@
 /**
 * --------------------------------
-* 레이아웃
+* Layout
 * ----------------------------- */
 .guide-on{
   /*background: url(../images/guide.png);*/
@@ -35,7 +35,7 @@ header{
 
 /**
  * --------------------------------
- * 타이포그래피
+ * Typography
  * ----------------------------- */
  html{
    font-size: 10px !important;
@@ -175,6 +175,8 @@ header::after{
 
 .sub-col-1{width: 60px;height: 60px;}
 .sub-col-2{width: 120px;height: 60px;}
+
+
 
 /**
 * --------------------------------
@@ -610,4 +612,16 @@ margin-top: 20px;
   font-family:'PT Serif',sans-serif;
   font-size: 1.2rem;
   font-style: italic;
+}
+/**
+* --------------------------------
+* brands
+* ----------------------------- */
+.brands .col-1{
+  height: 120px;
+}
+.brands .col-1:nth-of-type(1){
+background: url(../images/logo-sprite.png) no-repeat  -302px -5px;
+background-image: 60px 39px;
+/*background-position: */
 }
