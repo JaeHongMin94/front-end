@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
+  <a href="#"><div class="guide">GRID<br>ON/OFF</div></a>
   <div id="container" class="wrapper guide-off">
     <!--헤더-->
     <header class="header">
@@ -257,7 +258,7 @@
         <div class="col-1 brand-5" role="img" aria-label="boss"></div>
         <div class="col-1 brand-6" role="img" aria-label="nike"></div>
         <div class="col-1 brand-7" role="img" aria-label="crown"></div>
-        <div class="col-1 brand-0"><span class="sub-title">ALL<br>BRANDS</span></div>
+        <div class="col-1 brand-0"><a href="#"><span class="sub-title">ALL<br>BRANDS</span></a></div>
       </section>
     </main>
     <footer>
@@ -288,20 +289,33 @@
           </ul>
 
         </div>
-        <div class="sns col-2"></div>
-        <div class="payment col-2"></div>
+        <div class="sns-payment">
+          <div class="sns col-2">
+            <ul>
+              <li><a href="#"><img src="./images/icon-sns-twitter.png" alt="트위터"></a></li>
+              <li><a href="#"><img src="./images/icon-sns-instagram.png" alt="인스타그램"></a></li>
+              <li><a href="#"><img src="./images/icon-sns-pinterest.png" alt="핀터리스트"></a></li>
+              <li><a href="#"><img src="./images/icon-sns-facebook.png" alt="페이팔"></a></li>
+            </ul>
+          </div>
+          <div class="payment col-2">
+            <ul>
+              <li><a href="#"><img src="./images/icon-pay-visa.png" alt="비자"></a></li>
+              <li><a href="#"><img src="./images/icon-pay-mastercard.png" alt="마스터카드"></a></li>
+              <li><a href="#"><img src="./images/icon-pay-paypal.png" alt="페이팔"></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
 <script type="text/javascript">
 // TODO
-// html문서에서 id container를 가진 엘리먼트를 가져와서 변수 wrapper에 저장한다
-// wrapper를 클릭하면 아래 함수를 실행한다
-
-
+// guide class를 가진 div를 클릭하면 아래 함수를 실행한다.
+var guide_btn = document.querySelector('.guide');
 var wrapper = document.getElementById("container");
-wrapper.onclick = function(){
 
+guide_btn.onclick = function(){
   var wrapperClasses = document.getElementById("container").classList;
 
   if(wrapperClasses.contains("guide-off")){
@@ -311,9 +325,7 @@ wrapper.onclick = function(){
     wrapperClasses.add("guide-off");
     wrapperClasses.remove("guide-on");
   }
-
 };
-
 </script>
 </body>
 </html>
