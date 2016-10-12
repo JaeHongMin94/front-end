@@ -681,11 +681,15 @@ margin-top: 20px;
   background: #222222;
   padding-left: 90px;
   padding-right: 90px;
-  line-height: 60px;
+  line-height: 58px; /*개선방법 고민*/
   border-bottom: 1px solid #ececec;
 }
+.category ul{
+  display: block;
+  overflow: hidden;
+  width: 780px;
+}
 .category li{
-  /*margin-right: 35px;*/
   list-style:disc;
   list-style-position: inside;
   color : #656565;
@@ -696,7 +700,6 @@ margin-top: 20px;
 
 .category a{
   position: relative;
-  /*left: -1em;*/
   margin-right: 31px;
   margin-left: 25px;
   color: #fff;
@@ -706,5 +709,101 @@ margin-top: 20px;
   margin-left: 0;
 }
 .category li:last-child a{
+  margin-right: 0;
+}
+
+/**
+* --------------------------------
+* footer-info
+* ----------------------------- */
+
+.footer-info{
+  height: 120px;
+}
+.footer-info *{
+  box-sizing: border-box;
+}
+
+/**
+* --------------------------------
+*copyright
+* ----------------------------- */
+.copyright{
+  height: 120px;
+  box-sizing: border-box;
+  background: url(../images/icon-footer-logo-aware.png) no-repeat 75px 28px;
+  background-color: #222;
+  color:#656565;
+  font-family:'PT Serif',sans-serif;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 65px;
+  border-right: 1px solid #ececec;;
+}
+
+
+/**
+* --------------------------------
+* mailing
+* ----------------------------- */
+form{
+  height: 30px;
+}
+.send-mail{
+  background-color: #222;
+  text-align: center;
+  height: 120px;
+  padding: 30px 55px;
+  border-right: 1px solid #ececec;;
+}
+.send-mail input{
+  background-color: #393939;
+  background-image: url(../images/icon-footer-mail.png);
+  background-repeat: no-repeat;
+  background-position: 17px 7px;
+  border: none;
+  height: 30px;
+  width: 330px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-style: italic;
+  font-family:'PT Serif',sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  padding-left: 45px;
+  color:#757575;
+  margin-right: 0;
+  vertical-align: top;
+
+}
+.send-mail button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: inline;
+  background-color: #393939;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -3px;
+  background-image: url(../images/icon-footer-arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.send-mail ul{
+  display: inline-block;
+  margin-top: 20px;
+}
+.send-mail li a{
+  margin-right: 20px;
+  font-size: 12px;
+  color: #9d9d9d;
+}
+.send-mail li:last-child a{
   margin-right: 0;
 }
