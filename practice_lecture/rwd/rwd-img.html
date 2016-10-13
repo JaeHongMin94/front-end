@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../Modules/CSS/init/normalize.min.css">
+  <link rel="stylesheet" href="../../Modules/CSS/GRID/gird-static-1380-14-87-14.css">
+  <link rel="stylesheet" href="../../Modules/CSS/GRID/grid-system-fluid.css">
+  <link rel="stylesheet" href="../../Modules/CSS/rwd.css">
+  <link rel="stylesheet" href="./rwd-img.css">
+</head>
+<body>
+  <main class="container fluid show-grid">
+    <div class="row isolate">
+      <div class="col-4 o2">
+        <img class="rwd-img" src="http://placehold.it/800x220/" alt="">
+      </div>
+      <div class="col-4 o6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum doloremque iste culpa reprehenderit mollitia a, sunt cum cupiditate explicabo ab, harum, quam unde? Nihil rerum, aliquid maiores perspiciatis molestias dolor!</p>
+        <p>Culpa, voluptatum excepturi non soluta nesciunt sequi quam sit ab, at placeat error. Consequuntur magnam, veritatis soluta excepturi itaque vel rerum necessitatibus eaque illum dolore repellat, earum, voluptatibus inventore dolores!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="banner col-2 rwd-crop-bg"></div>
+      <div class="col-4">
+        <div class="cropping-demo rwd-crop-container">
+          <img src="http://nitzapizza.com/wp-content/uploads/2011/07/Pizza-capricciosa.jpg" alt="Latte">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="rwd-iframe-container">
+          <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IsEVv1Jt2Ro" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script>
+  document.onkeydown = function(event) {
+    if ( event.shiftKey && event.keyCode === 71 ) {
+      toggleGrid();
+    }
+  }
+  </script>
+</body>
+</html>
