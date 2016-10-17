@@ -1,29 +1,4 @@
-#연습과제
+#패스트캠퍼스 프론트엔드 개발스쿨 <br> 과정에 참여하며 수행한 연습리스트입니다.<br>
+자세한 내용은 아래 사이트에서 확인할 수 있습니다. 
 
-###Resume Site 
-<https://siwabada.github.io/FDS/practice_resume>
-
-###Magazine Layout
-<https://siwabada.github.io/FDS/practic_magazine>
-
-###Login Form
-<https://siwabada.github.io/FDS/practic_login-form>
-
-###Table
-<https://siwabada.github.io/FDS/practice_hyundai-table>
-
-###Shopping catalog
-<https://siwabada.github.io/FDS/practice_catalog>
-
-###Attribute-selector practice
-<https://siwabada.github.io/FDS/practice_catalog/practice_attribute-selector>
-
-###Article Layout
-<https://siwabada.github.io/FDS/practice_catalog/practice_article>
-
-<br>
-#STUDY
-
-###CSS Checkbox Menu
-<https://siwabada.github.io/small_project/treeview_without_javascript/>
-
+<https://siwabada.github.io/FDS/>
