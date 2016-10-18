@@ -4,9 +4,9 @@ body{
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
-  /*color: #fff;*/
+  font-weight: bold;
   color: #105B63;
+  margin: 0;
 }
 
 
@@ -29,15 +29,16 @@ main{
 * --------------------------------
 * common
 * ----------------------------- */
+.container, nav, header, main, footer{
+  width: 100vw;
+}
 .container *{
   box-sizing: border-box;
 }
 #skills, #portfolio, #experience, #contact{
   height: auto;
 }
-.hidden{
-  display: none;
-}
+
 ul{
   list-style: none;
 }
@@ -99,22 +100,30 @@ nav .h-menu{
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
+  background: none;
+  border: none;
 }
-
+nav .menu-mobile.hidden{
+  height: 0;
+  overflow: hidden;
+}
 nav .menu-mobile{
   position: absolute;
   top: 70px;
   left: 0;
   right: 0;
+  height: 200px;
+  overflow: hidden;
   background: #4dd6ee;
-  padding-left: 30px;
-  transition: all 1s ease-in-out;
+  /*padding-left: 30px;*/
+  transition: all 0.5s ease-in-out;
 }
 
 nav .menu-mobile li a{
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
 }
 nav li a:hover{
   color:#e33535
@@ -178,13 +187,15 @@ header{
 .skill-wrap{
   display: inline-block;
   text-align: left;
+
 }
 .skill-wrap div, .skill-wrap span{
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .skill-bar{
   background: #bfbfbf;
-  width: 500px;
+  width: 300px;
   height: 40px;
   position: relative;
   border-radius: 15px;
@@ -235,4 +246,8 @@ nav ul.menu{
 nav .h-menu,
 nav .menu-mobile{
   display: none;
+}
+
+.skill-bar{
+  width: 500px;
 }
