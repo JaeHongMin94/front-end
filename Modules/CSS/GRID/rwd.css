@@ -22,7 +22,7 @@
 
 .rwd-crop-container {
   position: relative;
-  height: 500px; /* default value */
+  height: 100px; /* default value */
 }
 
 .rwd-crop-container img {
