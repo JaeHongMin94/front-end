@@ -1,6 +1,6 @@
 var menu = document.querySelector('.h-menu');
 var menuMobile = document.querySelector('.menu-mobile');
-
+var picture = document.querySelector('.mypic');
 
 //menu요소를 클릭했을떄
 //클레스중에 hidden이 있으면
@@ -10,7 +10,7 @@ var menuMobile = document.querySelector('.menu-mobile');
 
 menu.onclick = function(){
   var menuMobileClasses = menuMobile.classList;
-
+  console.log('hee');
   if(menuMobileClasses.contains('hidden')){
     menuMobileClasses.remove('hidden');
   }else{
@@ -24,3 +24,23 @@ menu.onclick = function(){
 menuMobile.onclick= function(){
   menu.onclick();
 }
+
+picture.onclick = function(){
+  console.log('hello');
+  var pictureClassList = picture.classList;
+  console.log(pictureClassList);
+  if(picture.classList.contains('myrealpic')){
+    picture.classList.remove('myrealpic');
+  }else{
+    picture.classList.add('myrealpic');
+  }
+  }
+
+//
+//
+// if ( _container.classList.contains('show-grid') ) {
+//   _container.classList.remove('show-grid');
+// }
+// // 없으면?
+// else {
+//   _container.classList.add('show-grid');
