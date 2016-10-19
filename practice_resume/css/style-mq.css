@@ -304,6 +304,9 @@ header{
   opacity: 1;
 }
 
+.portfolio-description p{
+  margin-bottom: 1em;
+}
 
 .portfolio-01{
   background: url(../images/portfolio-aware.jpg);
