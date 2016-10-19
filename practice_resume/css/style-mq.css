@@ -244,12 +244,86 @@ header{
 * portfolio
 * ----------------------------- */
 
-.column{
+.portfolio-wrap .column{
   margin-bottom: 1rem;
+  position: relative;
+
 }
-#portfolio img{
+
+.portfolio-img{
+  width: 70%;
+  padding-bottom: 50%;
+  margin: 0 auto;
+  border: 2px solid #595959;
+  position: relative;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*.portfolio-img:after{
+  content: "";
+  position: absolute;
+  bottom:0;
+  left: 0;
   width: 100%;
+  height: 0%;
+  display: block;
+  box-sizing: border-box;
+  background: rgba(43, 43, 43, 0.84);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}*/
+
+/*.portfolio-img:hover::after{
+  content: "ajfkljdaskfjkd<lsajfklsdjsdjfklsdajklsdjfklsadj";
+  position: absolute;
+  padding-top: 50px;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  background: rgba(43, 43, 43, 0.84);
+}*/
+
+.portfolio-description{
+  color: yellow;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  padding: 3em;
+  background: rgba(74, 74, 74, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-img:hover .portfolio-description{
+  opacity: 1;
+}
+
+
+.portfolio-01{
+  background: url(../images/portfolio-aware.jpg);
+  background-size: cover;
+}
+.portfolio-02{
+  background: url(../images/portfolio-article.jpg);
+  background-size: cover;
+}
+.portfolio-03{
+  background: url(../images/portfolio-shopping.jpg);
+  background-size: cover;
+}
+
+
+#portfolio .portfolio-wrap img{
+/*나중에 지울코드*/
+  width: 70%;
   height: auto;
+  position: relative;
 }
 
 
@@ -279,4 +353,14 @@ nav .menu-mobile{
 }
 .skill-bar{
   width: 500px;
+}
+
+#portfolio .portfolio-wrap img,
+#portfolio .portfolio-wrap .dummy-img{
+  width: 100%;
+}
+
+.portfolio-img{
+  width: 100%;
+  padding-bottom: 70%;
 }
