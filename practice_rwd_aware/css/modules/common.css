@@ -1,0 +1,33 @@
+@charset "UTF-8";
+img {
+  /*이미지 아래 알수없는 공간 생김;*/
+  vertical-align: top;
+}
+
+.a11y {
+  position: absolute;
+  left: -9999px;
+}
+
+.a11y:focus {
+  left: 0;
+  top: 0;
+}
+
+.readable-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+/*# sourceMappingURL=../../map/modules/common.css.map */

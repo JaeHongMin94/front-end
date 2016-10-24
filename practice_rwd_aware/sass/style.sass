@@ -1,0 +1,192 @@
+@import ./config/_vars.scss
+@import ./config/_mixin.scss
+@fontface
+  font-family: Oswald
+  src: url(../resources/Fonts/Oswald/Oswald-Bold.ttf)
+@fontface
+  font-family: varela
+  src: url(../resources/Fonts/Varela_Round/VarelaRound-Regular.ttf)
+@fontface
+  font-family: PT_Serif
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Bold.ttf)
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Italic.ttf)
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Regular.ttf)
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf)
+
+/*
+ * ------------------------------
+ * common
+ * ------------------------------ */
+html
+  font-size: 10px
+
+.hot-items .column,
+.featured>div,
+.blog>div
+    text-align: center
+
+.section-title
+  position: relative
+
+  .title
+    position: relative
+    top: 88px
+    @include oswald-blue
+    font-size: 1.8rem
+    line-height: 1.666666667em
+  .sub-title
+    position: absolute
+    top: 165px
+    // left: center
+    font-family: $varela
+    color: $main-gray
+    font-size: 1.4rem
+    line-height: 1.285714286em
+
+
+/*
+ * ------------------------------
+ * header
+ * ------------------------------ */
+
+/* nav */
+nav
+
+/*main-slider*/
+.main-slider-1
+  background: url(../images/slider-main-content.jpg)
+.main-slider-2
+  div[class*='column']:nth-of-type(1)
+    background: url(../images/banners1-1.jpg)
+  div[class*='column']:nth-of-type(2)
+    background: url(../images/banners1-2.jpg)
+  div[class*='column']:nth-of-type(3)
+    background: url(../images/banners1-3.jpg)
+  div[class*='column']:nth-of-type(4)
+    background: url(../images/banners1-4.jpg) no-repeat center
+  div[class*='column']:nth-of-type(5)
+    background: url(../images/banners1-5.jpg)
+
+
+/*
+ * ------------------------------
+ * main
+ * ------------------------------ */
+/*hot-items*/
+
+
+.hot-items .row
+  >div:nth-of-type(1)
+    background-image: url(../images/most_loved_logo.png)
+  >div.section-title
+    background-position: center 42px
+  >div:nth-of-type(2)
+    background-image: url(../images/most_loved_item_1.png)
+  >div:nth-of-type(3)
+    background-image: url(../images/most_loved_item_2.jpg)
+  >div:nth-of-type(4)
+    background-image: url(../images/most_loved_item_3.jpg)
+  >div:nth-of-type(5)
+    background-image: url(../images/most_loved_item_4.jpg)
+  >div:nth-of-type(6)
+    background-image: url(../images/most_loved_item_5.jpg)
+  >div:nth-of-type(7)
+    background-image: url(../images/most_loved_item_6.jpg)
+  >div:nth-of-type(8)
+    background-image: url(../images/most_loved_item_7.jpg)
+  >div
+    @include flex-centerM
+    background-repeat: no-repeat
+    background-position: center
+
+
+/*sub-slider*/
+.sub-slider
+  .row>div:nth-of-type(1)
+    background: url(../images/sub-banner-1.jpg)
+  .row>div:nth-of-type(2)
+    background: url(../images/sub-banner-2.jpg)
+
+/* blog */
+.blog
+  .sub-title
+    @include centerX
+  >div:nth-of-type(1)
+    background-image: url(../images/blog-icon-logo.png)
+    background-repeat: no-repeat
+    background-position: center 42px
+  >div:nth-of-type(2)
+    background: url(../images/blog-hover.jpg)
+  >div:nth-of-type(5)
+    background: url(../images/blog-shoes-item.jpg)
+  >div:nth-of-type(7)
+    background: url(../images/blog-hover2.jpg)
+
+
+/*fetured*/
+.featured
+  >div:nth-of-type(1)
+    background-image: url(../images/featured-icon-logo.png)
+  >div.section-title
+    background-position: center 42px
+  >div:nth-of-type(2)
+    background-image: url(../images/featured-item01.jpg)
+  >div:nth-of-type(3)
+    background-image: url(../images/featured-item02.jpg)
+  >div:nth-of-type(4)
+    background-image: url(../images/featured-item03.png)
+  >div:nth-of-type(5)
+    background-image: url(../images/featured-item04.jpg)
+  >div:nth-of-type(6)
+    background-image: url(../images/featured-item05.jpg)
+  >div:nth-of-type(7)
+    background-image: url(../images/featured-item06.jpg)
+  >div:nth-of-type(8)
+    background-image: url(../images/featured-item07.jpg)
+
+
+  >div
+    @include flex-centerM
+    background-repeat: no-repeat
+    background-position: center
+
+
+/*
+ * ------------------------------
+ * aside
+ * ------------------------------ */
+
+/* brands */
+.brands
+  div:nth-of-type(1)
+    background-image: url(../images/brand-hnm.jpg)
+  div:nth-of-type(2)
+    background-image: url(../images/brand-puma.jpg)
+  div:nth-of-type(3)
+    background-image: url(../images/brand-adidas.jpg)
+  div:nth-of-type(4)
+    background-image: url(../images/brand-converse.jpg)
+  div:nth-of-type(5)
+    background-image: url(../images/brand-boss.jpg)
+  div:nth-of-type(6)
+    background-image: url(../images/brand-nike.jpg)
+  div:nth-of-type(7)
+    background-image: url(../images/brand-sprite.jpg)
+  div:nth-of-type(8)
+    background-image: url(../images/brand-274.png)
+
+  >div
+    @include flex-center
+    background-repeat: no-repeat
+    background-position: center
+/*mail-sns*/
+.mail-sns
+
+.sns>div
+  @include flex-center
+
+
+/*
+ * ------------------------------
+ * footer
+ * ------------------------------ */

@@ -1,0 +1,168 @@
+@import ./config/_vars.scss
+@import ./config/_mixin.scss
+
+.container
+  width: 480px
+  height: 100vh /*임시높이*/
+  margin: 0 auto
+  @media screen and (max-width: $break-xlarge)
+    width: 960px
+    background: #f5c65e /*임시*/
+  @media screen and (min-width: $break-xlarge)
+    width: 1920px
+    background: #3e8b48 /*임시*/
+
+/*임시높이+임시색깔*/
+.column
+    box-sizing: border-box
+    height: 120px
+    // border: 1px solid #666666
+
+
+.column:nth-of-type(n)
+  @include column-color
+.column:nth-of-type(2n)
+  @include column-color
+.column:nth-of-type(3n)
+  @include column-color
+/*임시높이+임시색깔 끝*/
+
+/*
+ * ------------------------------
+ * header
+ * ------------------------------ */
+
+/* nav */
+nav
+  .column
+    height: 80px
+
+/*main-slider*/
+.main-slider
+  .column
+    height: 480px
+
+.main-slider-2
+  width: 960px
+  .column
+    height: 240px
+  .row
+    >div:nth-of-type(4)
+      background: #4ab3ee
+      height: 480px
+    >div:nth-of-type(5)
+      position: relative
+      top: -240px
+
+
+
+
+
+
+/*
+ * ------------------------------
+ * main
+ * ------------------------------ */
+/*hot-items*/
+.hot-items
+  .column
+    height: 360px
+
+/*sub-slider*/
+.sub-slider
+  .column
+    height: 120px
+
+/* blog */
+.blog
+  float: left
+  display: flex
+  flex-wrap: wrap
+  width: 960px
+
+  >div:nth-of-type(n) /*임시*/
+    @include column-color
+  >div:nth-of-type(2n) /*임시*/
+    @include column-color
+  >div:nth-of-type(3n) /*임시*/
+    @include column-color
+
+  >div
+    flex: 0 0 240px
+    height: 240px
+  >div:nth-of-type(4)
+    display: flex
+    flex-direction: column
+    div
+      flex: 1 0 120px
+  >div:nth-of-type(7)
+    flex-grow: 1
+
+/*fetured*/
+.featured
+  float: left
+  display: flex
+  flex-wrap: wrap
+  width: 960px
+
+  >div:nth-of-type(n) /*임시*/
+    @include column-color
+  >div:nth-of-type(2n) /*임시*/
+    @include column-color
+  >div:nth-of-type(3n) /*임시*/
+    @include column-color
+  >div
+    flex: 0 0 240px
+    height: 240px
+
+/*
+ * ------------------------------
+ * aside
+ * ------------------------------ */
+
+/* brands */
+.brands
+  float: left
+  display: flex
+  width: 960px
+
+  >div:nth-of-type(n) /*임시*/
+    @include column-color
+  >div:nth-of-type(2n) /*임시*/
+    @include column-color
+  >div:nth-of-type(3n) /*임시*/
+    @include column-color
+  >div
+    flex: 1 0 120px
+    height: 120px
+
+.mail-sns
+  float: left
+  display: flex
+  width: 960px
+  div:nth-of-type(n) /*임시*/
+    @include column-color
+  div:nth-of-type(2n) /*임시*/
+    @include column-color
+  >div
+    height: 120px
+  .mail
+    flex-basis: 720px
+  .sns
+    flex-basis: 240px
+    display: flex
+    flex-wrap: wrap
+    div
+      flex: 0 0 60px
+      height: 60px
+
+
+
+/*
+ * ------------------------------
+ * footer
+ * ------------------------------ */
+
+footer
+  .column
+    height: 60px

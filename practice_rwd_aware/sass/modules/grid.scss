@@ -1,0 +1,250 @@
+@import "../config/_mixin.scss";
+
+/**
+ * 페이지 폭                           : 1920px
+ * 컬럼 개수                           : 16
+ * 컬럼 폭                            : 120px
+ * 거터 폭                            : 0
+ * break-point                     : ~767px, 768~1920px, 1092px~
+ *
+ */
+
+ /**
+  * --------------------------------
+  * 컨테이너 모듈 / 공통적용
+  * ----------------------------- */
+  .container {
+    margin-left  : auto;
+    margin-right : auto;
+  }
+
+  .container.show-grid {
+    position : relative;
+  }
+  .container.show-grid::before {
+    content    : '';
+    position   : absolute;
+    z-index    : 10000;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    height     : 200vh;
+    background : linear-gradient(90deg, hsla(357, 97%, 86%, 0.45) 50%, hsla(356, 95%, 68%, 0.45) 50%);
+    background-size: 50% 1px;
+    // opacity:         0.5;
+  }
+  .container.show-grid ::after{
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    height          : 200vh;
+    background      : linear-gradient(transparent 9px, #3b1519 9px);
+    background-size : 1px 10px;
+  }
+
+  .row  ::after,
+  .grid ::after {
+    content : '';
+    display : block;
+    clear   : both;
+  }
+
+  .column, .cell {
+    box-sizing : border-box;
+    float      : left;
+  }
+
+  /* 공통 동작 */
+  .column[class*="-push-"],
+  .column[class*="-pull-"] {
+    position: relative;
+  }
+
+  // @media only screen and (max-width: 767px) {
+  //   .s-1 { width    : 25%; }
+  //   .s-2 { width    : 50%; }
+  //   .s-3 { width    : 75%; }
+  //   .s-full { width : 100%; }
+  //
+  //   /* 중단점 설계 마다 독립적으로 동작 */
+  //   .s-prefix-1 { margin-left  : 25%; }
+  //   .s-prefix-2 { margin-left  : 50%; }
+  //   .s-prefix-3 { margin-left  : 75%; }
+  //
+  //   .s-suffix-1 { margin-right : 25%; }
+  //   .s-suffix-2 { margin-right : 50%; }
+  //   .s-suffix-3 { margin-right : 75%; }
+  //
+  //   .s-push-1 { left : 25%; }
+  //   .s-push-2 { left : 50%; }
+  //   .s-push-3 { left : 75%; }
+  //
+  //   .s-pull-1 { right : 25%; }
+  //   .s-pull-2 { right : 50%; }
+  //   .s-pull-3 { right : 75%; }
+  //
+  //   .s-hidden { display: none; }
+  // }
+
+  /**
+   * --------------------------------
+   * 태블릿                           : 8 컬럼 레이아웃 모듈
+   * 768px
+   * ----------------------------- */
+  @media only screen and (max-width: 1600px){
+
+    .container.adaptive {
+      width : 768px;
+    }
+
+    .container.show-grid::before {
+      background      : linear-gradient(90deg, hsla(357, 97%, 86%, 0.45) 50%, hsla(356, 95%, 68%, 0.45) 50%);
+      background-size : 25% 1px;
+    }
+
+    .l-1 { width    : 12.5%; }
+    .l-2 { width    : 25%; }
+    .l-3 { width    : 37.5%; }
+    .l-4 { width    : 50%; }
+    .l-5 { width    : 62.5%; }
+    .l-6 { width    : 75%; }
+    .l-7 { width    : 87.5%; }
+    .l-full { width : 100%; }
+
+    .l-prefix-1 { margin-left : 12.5%; }
+    .l-prefix-2 { margin-left : 25%; }
+    .l-prefix-3 { margin-left : 37.5%; }
+    .l-prefix-4 { margin-left : 50%; }
+    .l-prefix-5 { margin-left : 62.5%; }
+    .l-prefix-6 { margin-left : 75%; }
+    .l-prefix-7 { margin-left : 87.5%; }
+
+    .l-suffix-1 { margin-right : 12.5%; }
+    .l-suffix-2 { margin-right : 25%; }
+    .l-suffix-3 { margin-right : 37.5%; }
+    .l-suffix-4 { margin-right : 50%; }
+    .l-suffix-5 { margin-right : 62.5%; }
+    .l-suffix-6 { margin-right : 75%; }
+    .l-suffix-7 { margin-right : 87.5%; }
+
+    .l-push-1 { left : 12.5%; }
+    .l-push-2 { left : 25%; }
+    .l-push-3 { left : 37.5%; }
+    .l-push-4 { left : 50%; }
+    .l-push-5 { left : 62.5%; }
+    .l-push-6 { left : 75%; }
+    .l-push-7 { left : 87.5%; }
+
+    .l-pull-1 { right : 12.5%; }
+    .l-pull-2 { right : 25%; }
+    .l-pull-3 { right : 37.5%; }
+    .l-pull-4 { right : 50%; }
+    .l-pull-5 { right : 62.5%; }
+    .l-pull-6 { right : 75%; }
+    .l-pull-7 { right : 87.5%; }
+
+    .l-hidden { display : none;}
+  }
+
+  /**
+   * --------------------------------
+   * xlarge                        : 16 컬럼 레이아웃 모듈
+   * 1600
+   * ----------------------------- */
+  @media only screen and (min-width: 1600px){
+
+    .container.adaptive {
+      width : 768px;
+    }
+
+    .container.show-grid::before {
+      background         : linear-gradient(90deg, hsla(357, 97%, 86%, 0.45) 50%, hsla(356, 95%, 68%, 0.45) 50%);
+      background-size    : 12.5% 1px;
+    }
+
+    .xl-1 { width:    6.25% ;}
+    .xl-2 { width:    12.5% ;}
+    .xl-3 { width:    18.75%;}
+    .xl-4 { width:    25% ; }
+    .xl-5 { width:    31.25%;}
+    .xl-6 { width:    37.5% ;}
+    .xl-7 { width:    43.75%;}
+    .xl-8 { width:    50% ; }
+    .xl-9 { width:    56.25%;}
+    .xl-10 { width:   62.5; }
+    .xl-11 { width:   68.75%;}
+    .xl-12 { width:   75%; }
+    .xl-13 { width:   81.25%;}
+    .xl-14 { width:   87.5%; }
+    .xl-15 { width:   93.75%;}
+    .xl-full { width: 100%; }
+
+    .xl-prefix-1 { margin-left:  6.25%;}
+    .xl-prefix-2 { margin-left:  12.5% ;}
+    .xl-prefix-3 { margin-left:  18.75%;}
+    .xl-prefix-4 { margin-left:  25% ;}
+    .xl-prefix-5 { margin-left:  31.25%;}
+    .xl-prefix-6 { margin-left:  37.5% ;}
+    .xl-prefix-7 { margin-left:  43.75%;}
+    .xl-prefix-8 { margin-left:  50% ;}
+    .xl-prefix-9 { margin-left:  56.25%}
+    .xl-prefix-10 { margin-left: 62.5}
+    .xl-prefix-11 { margin-left: 68.75%}
+    .xl-prefix-12 { margin-left: 75%}
+    .xl-prefix-13 { margin-left: 81.25%}
+    .xl-prefix-14 { margin-left: 87.5%}
+    .xl-prefix-15 { margin-left: 93.75%}
+
+
+    .xl-suffix-1 { margin-right:  6.25%;}
+    .xl-suffix-2 { margin-right:  12.5% ;}
+    .xl-suffix-3 { margin-right:  18.75%;}
+    .xl-suffix-4 { margin-right:  25% ;}
+    .xl-suffix-5 { margin-right:  31.25%;}
+    .xl-suffix-6 { margin-right:  37.5% ;}
+    .xl-suffix-7 { margin-right:  43.75%;}
+    .xl-suffix-8 { margin-right:  50% ;}
+    .xl-suffix-9 { margin-right:  56.25%}
+    .xl-suffix-10 { margin-right: 62.5}
+    .xl-suffix-11 { margin-right: 68.75%}
+    .xl-suffix-12 { margin-right: 75%}
+    .xl-suffix-13 { margin-right: 81.25%}
+    .xl-suffix-14 { margin-right: 87.5%}
+    .xl-suffix-15 { margin-right: 93.75%}
+
+    .xl-push-1 { left  : 6.25%;}
+    .xl-push-2 { left  : 12.5% ;}
+    .xl-push-3 { left  : 18.75%;}
+    .xl-push-4 { left  : 25% ;}
+    .xl-push-5 { left  : 31.25%;}
+    .xl-push-6 { left  : 37.5% ;}
+    .xl-push-7 { left  : 43.75%;}
+    .xl-push-8 { left  : 50% ;}
+    .xl-push-9 { left  : 56.25%}
+    .xl-push-10 { left  :62.5}
+    .xl-push-11 { left  :68.75%}
+    .xl-push-12 { left  :75%}
+    .xl-push-13 { left  :81.25%}
+    .xl-push-14 { left  :87.5%}
+    .xl-push-15 { left  :93.75%}
+
+    .xl-pull-1 { right : 6.25%;}
+    .xl-pull-2 { right : 12.5% ;}
+    .xl-pull-3 { right : 18.75%;}
+    .xl-pull-4 { right : 25% ;}
+    .xl-pull-5 { right : 31.25%;}
+    .xl-pull-6 { right : 37.5% ;}
+    .xl-pull-7 { right : 43.75%;}
+    .xl-pull-8 { right : 50% ;}
+    .xl-pull-9 { right : 56.25%}
+    .xl-pull-10 { right :62.5}
+    .xl-pull-11 { right :68.75%}
+    .xl-pull-12 { right :75%}
+    .xl-pull-13 { right :81.25%}
+    .xl-pull-14 { right :87.5%}
+    .xl-pull-15 { right :93.75%}
+
+    .xl-hidden { display: none; }
+  }

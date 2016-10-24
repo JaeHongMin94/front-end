@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/**
+* --------------------------------
+* media query break point
+* ----------------------------- */
+/**
+* --------------------------------
+* style
+* ----------------------------- */
+/*font*/
+/* 백그라운드 컬러 랜덤선택 */
+/* flex 중앙정렬 */
+/* translate 중앙정렬 */
+/**
+ * --------------------------------
+ * 스타일 mixin
+ * ----------------------------- */
+@fontface {
+  font-family: Oswald;
+  src: url(../resources/Fonts/Oswald/Oswald-Bold.ttf);
+}
+
+@fontface {
+  font-family: varela;
+  src: url(../resources/Fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+@fontface {
+  font-family: PT_Serif;
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Bold.ttf);
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Italic.ttf);
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-Regular.ttf);
+  src: url(../resources/Fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf);
+}
+
+/*
+ * ------------------------------
+ * common
+ * ------------------------------ */
+html {
+  font-size: 10px;
+}
+
+.hot-items .column,
+.featured > div,
+.blog > div {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title .title {
+  position: relative;
+  top: 88px;
+  font-family: Oswald, sans-serif;
+  color: #1f4ba5;
+  font-size: 1.8rem;
+  line-height: 1.666666667em;
+}
+
+.section-title .sub-title {
+  position: absolute;
+  top: 165px;
+  font-family: "Varela Round", sans-serif;
+  color: #868686;
+  font-size: 1.4rem;
+  line-height: 1.285714286em;
+}
+
+/*
+ * ------------------------------
+ * header
+ * ------------------------------ */
+/* nav */
+/*main-slider*/
+.main-slider-1 {
+  background: url(../images/slider-main-content.jpg);
+}
+
+.main-slider-2 div[class*='column']:nth-of-type(1) {
+  background: url(../images/banners1-1.jpg);
+}
+
+.main-slider-2 div[class*='column']:nth-of-type(2) {
+  background: url(../images/banners1-2.jpg);
+}
+
+.main-slider-2 div[class*='column']:nth-of-type(3) {
+  background: url(../images/banners1-3.jpg);
+}
+
+.main-slider-2 div[class*='column']:nth-of-type(4) {
+  background: url(../images/banners1-4.jpg) no-repeat center;
+}
+
+.main-slider-2 div[class*='column']:nth-of-type(5) {
+  background: url(../images/banners1-5.jpg);
+}
+
+/*
+ * ------------------------------
+ * main
+ * ------------------------------ */
+/*hot-items*/
+.hot-items .row > div:nth-of-type(1) {
+  background-image: url(../images/most_loved_logo.png);
+}
+
+.hot-items .row > div.section-title {
+  background-position: center 42px;
+}
+
+.hot-items .row > div:nth-of-type(2) {
+  background-image: url(../images/most_loved_item_1.png);
+}
+
+.hot-items .row > div:nth-of-type(3) {
+  background-image: url(../images/most_loved_item_2.jpg);
+}
+
+.hot-items .row > div:nth-of-type(4) {
+  background-image: url(../images/most_loved_item_3.jpg);
+}
+
+.hot-items .row > div:nth-of-type(5) {
+  background-image: url(../images/most_loved_item_4.jpg);
+}
+
+.hot-items .row > div:nth-of-type(6) {
+  background-image: url(../images/most_loved_item_5.jpg);
+}
+
+.hot-items .row > div:nth-of-type(7) {
+  background-image: url(../images/most_loved_item_6.jpg);
+}
+
+.hot-items .row > div:nth-of-type(8) {
+  background-image: url(../images/most_loved_item_7.jpg);
+}
+
+.hot-items .row > div {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*sub-slider*/
+.sub-slider .row > div:nth-of-type(1) {
+  background: url(../images/sub-banner-1.jpg);
+}
+
+.sub-slider .row > div:nth-of-type(2) {
+  background: url(../images/sub-banner-2.jpg);
+}
+
+/* blog */
+.blog .sub-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blog > div:nth-of-type(1) {
+  background-image: url(../images/blog-icon-logo.png);
+  background-repeat: no-repeat;
+  background-position: center 42px;
+}
+
+.blog > div:nth-of-type(2) {
+  background: url(../images/blog-hover.jpg);
+}
+
+.blog > div:nth-of-type(5) {
+  background: url(../images/blog-shoes-item.jpg);
+}
+
+.blog > div:nth-of-type(7) {
+  background: url(../images/blog-hover2.jpg);
+}
+
+/*fetured*/
+.featured > div:nth-of-type(1) {
+  background-image: url(../images/featured-icon-logo.png);
+}
+
+.featured > div.section-title {
+  background-position: center 42px;
+}
+
+.featured > div:nth-of-type(2) {
+  background-image: url(../images/featured-item01.jpg);
+}
+
+.featured > div:nth-of-type(3) {
+  background-image: url(../images/featured-item02.jpg);
+}
+
+.featured > div:nth-of-type(4) {
+  background-image: url(../images/featured-item03.png);
+}
+
+.featured > div:nth-of-type(5) {
+  background-image: url(../images/featured-item04.jpg);
+}
+
+.featured > div:nth-of-type(6) {
+  background-image: url(../images/featured-item05.jpg);
+}
+
+.featured > div:nth-of-type(7) {
+  background-image: url(../images/featured-item06.jpg);
+}
+
+.featured > div:nth-of-type(8) {
+  background-image: url(../images/featured-item07.jpg);
+}
+
+.featured > div {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*
+ * ------------------------------
+ * aside
+ * ------------------------------ */
+/* brands */
+.brands div:nth-of-type(1) {
+  background-image: url(../images/brand-hnm.jpg);
+}
+
+.brands div:nth-of-type(2) {
+  background-image: url(../images/brand-puma.jpg);
+}
+
+.brands div:nth-of-type(3) {
+  background-image: url(../images/brand-adidas.jpg);
+}
+
+.brands div:nth-of-type(4) {
+  background-image: url(../images/brand-converse.jpg);
+}
+
+.brands div:nth-of-type(5) {
+  background-image: url(../images/brand-boss.jpg);
+}
+
+.brands div:nth-of-type(6) {
+  background-image: url(../images/brand-nike.jpg);
+}
+
+.brands div:nth-of-type(7) {
+  background-image: url(../images/brand-sprite.jpg);
+}
+
+.brands div:nth-of-type(8) {
+  background-image: url(../images/brand-274.png);
+}
+
+.brands > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*mail-sns*/
+.sns > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * ------------------------------
+ * footer
+ * ------------------------------ */
+
+/*# sourceMappingURL=../map/style.css.map */

@@ -1,0 +1,50 @@
+/* 백그라운드 컬러 랜덤선택 */
+@mixin column-color{
+  background-color: rgb(random(255)-1, random(255)-1, random(255)-1);
+}
+/* flex 중앙정렬 */
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-centerM{
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-centerC{
+  display: flex;
+  align-items: center;
+}
+/* translate 중앙정렬 */
+@mixin center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin centerX{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin centerY{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ /**
+ * --------------------------------
+ * 스타일 mixin
+ * ----------------------------- */
+
+@mixin oswald-blue{
+  font-family: Oswald, sans-serif;
+  color: #1f4ba5;
+}
+
+@mixin Varela-black{
+  font-family: 'Varela Round', sans-serif;
+  color: #000;
+}
