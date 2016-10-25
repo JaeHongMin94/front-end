@@ -5,8 +5,6 @@ var gallery_view = container.querySelector('.gallery-view')
 
 
 
-
-
 var changeGalleryView = function(){
   var img = this.querySelector('img');
   var view = gallery_view.querySelector('img');
@@ -22,27 +20,20 @@ for(var i=0; i<gallery_control_buttons.length; i++){
   gallery_control_buttons.item(i).onclick = changeGalleryView;
 }
 
-//.toggle-controls요소를  btn_toggle변수에 담는다
-//
+
 
 var btn_toggle = container.querySelector('.toggle-controls');
 
-btn_toggle.onclick = function(){
-  if (gallery_control_buttons[0].classList.contains('hidden')){
-    gallery_control_buttons[0].classList.remove('hidden')
-  }else{
-    gallery_control_buttons[0].classList.add('hidden')
-  }
-}
 
 btn_toggle.onclick = function(){
   for(var i=0; i<gallery_control_buttons.length; i++){
-    var controlClassList = gallery_control_buttons[i].classList
-    console.log(controlClassList);
+    var controlClassList = gallery_control_buttons[i].classList;
     if (controlClassList.contains('hidden')){
       controlClassList.remove('hidden')
+      btn_toggle.textContent = '-';
     }else{
       controlClassList.add('hidden')
+      btn_toggle.textContent = '+';
     }
   }
 }

@@ -39,12 +39,14 @@
  * 스타일 mixin
  * ----------------------------- */
 
-@mixin oswald-blue{
+@mixin oswald-blue($font_size: 1rem){
   font-family: Oswald, sans-serif;
   color: #1f4ba5;
+  font-size: $font_size;
 }
 
-@mixin Varela-black{
+@mixin Varela-black($font_size: 1rem){
   font-family: 'Varela Round', sans-serif;
   color: #000;
+  font-size: $font_size;
 }

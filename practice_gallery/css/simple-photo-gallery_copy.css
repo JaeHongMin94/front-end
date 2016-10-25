@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  position: relative; }
+
+.gallery-controls {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .gallery-controls button {
+    transition: all 1s;
+    position: absolute;
+    left: 40px; }
+  .gallery-controls button.hidden {
+    position: absolute;
+    left: 0; }
+
+.toggle-controls {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #ff1c1c; }
+
+/*# sourceMappingURL=../map/simple-photo-gallery_copy.css.map */

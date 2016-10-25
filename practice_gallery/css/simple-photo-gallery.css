@@ -10,16 +10,17 @@ body {
 
 .container {
   position: relative;
-  background: #ff6565; }
+  height: 90vh;
+  margin: 2rem auto;
+  overflow: hidden; }
+
+button {
+  outline: none; }
 
 .gallery-controls {
   position: absolute;
-  width: 500px;
-  height: 500px;
   top: 0;
-  right: 0;
-  background: #f6ff46;
-  transition: all 0.5s ease-out; }
+  left: 0; }
   .gallery-controls button {
     width: 70px;
     height: 70px;
@@ -27,33 +28,48 @@ body {
     margin: 10px;
     cursor: pointer;
     overflow: hidden;
-    transition: all 1s ease-out;
-    background: #1dff5d;
-    width: 100px;
-    height: 100px;
     position: absolute;
     top: 0;
-    right: 0; }
+    transition: all 0.3s ease-out; }
     .gallery-controls button:hover, .gallery-controls button:focus {
       transform: scale(1.1); }
-    .gallery-controls button.hidden {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all 1s ease-out; }
     .gallery-controls button img {
       width: 70px;
       height: 70px; }
+    .gallery-controls button:nth-of-type(1) {
+      left: 80px;
+      transition-delay: 0.5s; }
+    .gallery-controls button:nth-of-type(2) {
+      left: 160px;
+      transition-delay: 0.3s; }
+    .gallery-controls button:nth-of-type(3) {
+      left: 240px;
+      transition-delay: 0.1s; }
+  .gallery-controls button.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-out; }
+    .gallery-controls button.hidden:nth-of-type(1) {
+      transition-delay: 0.1s; }
+    .gallery-controls button.hidden:nth-of-type(2) {
+      transition-delay: 0.3s; }
+    .gallery-controls button.hidden:nth-of-type(3) {
+      transition-delay: 0.5s; }
 
 .toggle-controls {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: #ff5757;
-  column-rule: #fff;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 10px; }
+  margin: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 10;
+  cursor: pointer; }
 
 /*# sourceMappingURL=../map/simple-photo-gallery.css.map */
