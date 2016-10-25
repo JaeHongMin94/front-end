@@ -1,0 +1,59 @@
+.gallery-controls button, .toggle-controls {
+  border: 0;
+  padding: 0;
+  background: transparent; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  position: relative;
+  background: #ff6565; }
+
+.gallery-controls {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  right: 0;
+  background: #f6ff46;
+  transition: all 0.5s ease-out; }
+  .gallery-controls button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 1s ease-out;
+    background: #1dff5d;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .gallery-controls button:hover, .gallery-controls button:focus {
+      transform: scale(1.1); }
+    .gallery-controls button.hidden {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 1s ease-out; }
+    .gallery-controls button img {
+      width: 70px;
+      height: 70px; }
+
+.toggle-controls {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ff5757;
+  column-rule: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px; }
+
+/*# sourceMappingURL=../map/simple-photo-gallery.css.map */

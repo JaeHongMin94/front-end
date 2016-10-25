@@ -1,0 +1,85 @@
+%reset-button
+  border: 0
+  padding: 0
+  background: transparent
+%flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+@mixin circle($width, $radius: 50%)
+  width: $width
+  height: $width
+  border-radius: $radius
+
+
+body
+  @extend %flex-center
+
+.container
+  position: relative
+  background: #ff6565
+
+
+.gallery-controls
+  position: absolute
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+  width: 500px
+  height: 500px
+  top: 0
+  right: 0
+  background: #f6ff46
+
+
+  transition: all 0.5s ease-out
+
+  button
+    @extend %reset-button
+    @include circle(70px)
+    margin: 10px
+    cursor: pointer
+    overflow: hidden
+    transition: all 1s ease-out
+    background: #1dff5d
+    width: 100px
+    height: 100px
+    position: absolute
+    top: 0
+    right: 0
+
+    &:hover,
+    &:focus
+      transform: scale(1.1)
+    &.hidden
+      // transform: scale(0)
+      position: absolute
+      top: 0
+      left: 0
+      transition: all 1s ease-out
+
+    img
+      width: 70px
+      height: 70px
+
+  // button:nth-of-type(1)
+  //   transition-delay: 0.5s
+  //
+  // button:nth-of-type(2)
+  //   transition-delay: 0.3s
+  //
+  // button:nth-of-type(3)
+  //   transition-delay: 0.1s
+
+
+.toggle-controls
+  @extend %reset-button
+  @include circle(70px)
+  background: #ff5757
+  column-rule: #fff
+  position: absolute
+  top: 0
+  left: 0
+  margin: 10px
