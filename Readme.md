@@ -1,4 +1,2 @@
-#패스트캠퍼스 프론트엔드 개발스쿨 <br> 과정에 참여하며 수행한 연습리스트입니다.<br>
-자세한 내용은 아래 사이트에서 확인할 수 있습니다. 
-
-<https://siwabada.github.io/FDS/>
+# 프론트엔트 개발 연습 리스트 
+https://wayhome25.github.io/front-end/
